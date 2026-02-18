@@ -1,0 +1,59 @@
+.inventory-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+.inventory-table thead {
+  background-color: #8B4513;
+  color: white;
+}
+
+.inventory-table th {
+  padding: 15px;
+  text-align: left;
+  font-weight: 600;
+}
+
+.inventory-table td {
+  padding: 12px 15px;
+  border-bottom: 1px solid #eee;
+}
+
+.inventory-table tbody tr:hover {
+  background-color: #f9f9f9;
+}
+
+.inventory-table tbody tr.low {
+  background-color: #fff3cd;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.status.normal {
+  color: #28a745;
+}
+
+.status.low {
+  color: #ff9800;
+}
+
+@media (max-width: 768px) {
+  .inventory-table {
+    font-size: 13px;
+  }
+
+  .inventory-table th,
+  .inventory-table td {
+    padding: 8px 10px;
+  }
+}
